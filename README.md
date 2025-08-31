@@ -33,6 +33,7 @@ Projeler, iş paketleri, aktiviteler, bütçe–gerçekleşen maliyetler, depart
 ---
 
 ## Proje Yapısı
+```
 ├─ my-admin/ # Frontend (React + Vite + Tailwind)
 │ ├─ src/pages/ # Dashboard, Projects, WorkPackages, OrgUnits
 │ ├─ src/api/axios.js # API client
@@ -45,7 +46,7 @@ Projeler, iş paketleri, aktiviteler, bütçe–gerçekleşen maliyetler, depart
 │ └─ server.js # Express app
 │
 └─ .env.example # DB bağlantısı için örnek config
-
+```
 ---
 
 ## Gereksinimler
