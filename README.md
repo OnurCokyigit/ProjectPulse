@@ -66,6 +66,7 @@ PostgreSQL’de `core` şeması ve tabloları oluşturun:
 
 ```sql
 CREATE SCHEMA core;
+```
 -- project, work_package, activity, budget_item, actual_cost vb. tabloları oluşturun
 
 ### 2. Backend
@@ -126,10 +127,12 @@ PGPORT=5432
 PGUSER=postgres
 PGPASSWORD=yourpassword
 PGDATABASE=geoerp
-
+```
 ### Frontend proxy vite.config.js içinde ayarlanmıştır:
+```
 server: {
   proxy: {
     '/api': 'http://localhost:3000'
   }
 }
+```
