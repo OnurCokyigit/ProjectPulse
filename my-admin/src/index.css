@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+/* Minimum custom globals; layout'u Tailwind yönetsin */
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: dark;
+}
+
+/* Body'yi ortalamayı kaldır: app tam genişlik çalışsın */
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+/* Link varsayılanı sade kalsın; renkleri Tailwind ile veriyoruz */
+a {
+  text-decoration: none;
+}
