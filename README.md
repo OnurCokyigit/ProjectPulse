@@ -33,21 +33,18 @@ Projeler, iş paketleri, aktiviteler, bütçe–gerçekleşen maliyetler, depart
 ---
 
 ## Proje Yapısı
-my-admin/                  # Frontend (React + Vite + Tailwind)
-├─ src/pages/              # Dashboard, Projects, WorkPackages, OrgUnits
-├─ src/api/axios.js        # API client
-└─ vite.config.js          # Proxy ayarları
-
-app-api/                   # Backend (Node.js + Express)
-├─ src/routes/             # /projects, /work-packages, /org-units ...
-├─ src/controllers/        # Generic controller factory
-├─ db.js                   # PostgreSQL bağlantısı
-└─ server.js               # Express app
-
-docs/                      # Dokümantasyon
-└─ GeoERP_Teknik_Rapor.pdf
-
-.env.example               # DB bağlantısı için örnek config
+├─ my-admin/ # Frontend (React + Vite + Tailwind)
+│ ├─ src/pages/ # Dashboard, Projects, WorkPackages, OrgUnits
+│ ├─ src/api/axios.js # API client
+│ └─ vite.config.js # Proxy ayarları
+│
+├─ app-api/ # Backend (Node.js + Express)
+│ ├─ src/routes/ # /projects, /work-packages, /org-units ...
+│ ├─ src/controllers/ # Generic controller factory
+│ ├─ db.js # PostgreSQL bağlantısı
+│ └─ server.js # Express app
+│
+└─ .env.example # DB bağlantısı için örnek config
 
 ---
 
@@ -126,7 +123,7 @@ PGHOST=localhost
 PGPORT=5432
 PGUSER=postgres
 PGPASSWORD=yourpassword
-PGDATABASE=geoerp
+PGDATABASE=projectpulse
 ```
 ### Frontend proxy vite.config.js içinde ayarlanmıştır:
 ```
